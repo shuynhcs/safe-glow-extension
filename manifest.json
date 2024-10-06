@@ -1,0 +1,28 @@
+{
+    "name": "SafeGlow",
+    "version": "0.1.0",
+    "description": "Informing consumers of beauty ingredient safety and science.",
+    "permissions": [],
+    "host_permission": [],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [],
+            "js": ["contentScript.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [],
+            "matches": []
+        }
+    ],
+    "action":{
+        "default_icon": {},
+        "default_title": "SafeGlow",
+        "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}
