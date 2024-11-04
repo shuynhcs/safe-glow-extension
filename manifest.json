@@ -5,6 +5,12 @@
     "background": {
         "service_worker": "background.js"
     },
+    "content_scripts": [
+        {
+            "matches" : ["*://www.dermstore.com/p/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
     "action":{
         "default_icon": "assets/safeglowicon.png",
         "default_title": "SafeGlow",
